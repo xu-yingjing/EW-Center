@@ -11,8 +11,19 @@ Page({
   onShow() {
     const storagephoneNumber = wx.getStorageSync('phoneNumber') || ""
     const storagepassword = wx.getStorageSync('password') || ""
-    this.setData({'inputUserInfo.phoneNumber': storagephoneNumber})
-    this.setData({'inputUserInfo.password': storagepassword})
+    for (let index = 0; index < this.data.userInfo.length; index++) {
+      const userInfo = this.data.userInfo[index];
+      if (userInfo.phoneNumber === storagephoneNumber) {
+        if (storagepassword === userInfo.password) {
+          wx.redirectTo({
+            url: '/pages/ew/ew' +
+            '?phoneNumber=' + userInfo.phoneNumber +
+            '&password=' + userInfo.password,
+          })
+          break
+        }
+      }
+    }
   },
 
   onPhoneNumberInput(e) {
