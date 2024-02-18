@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="login-view">
+  <view class="input-view">
+    <view class="input-item-view">
+      <text class="input-item-title">手机号：</text>
+      <input class="input-item-input" type="number" placeholder="请输入手机号" bindinput="onPhoneNumberInput" value="{{inputUserInfo.phoneNumber}}"/>
+    </view>
+    <view class="input-item-view">
+      <text class="input-item-title">密码：</text>
+      <input class="input-item-input" password type="text" placeholder="请输入密码" bindinput="onPasswordInput" value="{{inputUserInfo.password}}"/>
+    </view>
+  </view>
+  <button class="login-button" type="primary" bind:tap="onLogin">登入</button>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/ed-remoter/ed-remoter.wxml-->
+<view class="container">
+  <button class="function-button" bind:tap="onButtonUp" bind:longpress="onButtonUpLong">
+    <image class="function-button-image" src="/images/EW-Icon/上升.png" mode="aspectFit"/>
+  </button>
+  <button class="function-button" bind:tap="onButtonDown" bind:longpress="onButtonDownLong">
+    <image class="function-button-image" src="/images/EW-Icon/下降.png" mode="aspectFit"/>
+  </button>
+  <button class="function-button" bind:tap="onButtonLock">
+    <image class="function-button-image" src="/images/EW-Icon/锁定.png" mode="aspectFit"/>
+  </button>
+  <button class="function-button" bind:tap="onButtonStop">
+    <image class="function-button-image" src="/images/EW-Icon/暂停.png" mode="aspectFit"/>
+  </button>
+</view>

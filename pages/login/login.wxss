@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+page {
+  height: 100%;
+}
+
+.login-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.input-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30%;
+}
+
+.input-item-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 6%;
+  width: 90%;
+}
+
+.input-item-title {
+  font-size: medium;
+  margin-top: 2%;
+}
+
+.input-item-input {
+  width: 65%;
+  margin-right: 5%;
+  font-size: medium;
+  background-color: rgb(255, 255, 255);
+  border: 1rpx solid rgb(180, 180, 180);
+  border-radius: 20rpx;
+  min-height: 80rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.login-button {
+  margin-bottom: 50%;
+  font-size: medium;
+}

@@ -1,0 +1,12 @@
+<!--pages/ew/ew.wxml-->
+<view class="ew-container">
+  <block wx:if="{{phoneNumber == '15059789907' || phoneNumber == '13808551007' || phoneNumber == '15059857007'}}">
+    <view class="ew-item" bind:tap="onEDRemoter" style="background-color: {{EDRemoterItemBackgroundColor}};">
+      <view class="ew-item-name">
+        <view class="ew-item-name-en">ED-Remoter</view>
+        <view class="ew-item-name-zh">电动门遥控</view>
+      </view>
+      <image class="ew-item-icon" src="/images/EW-Icon/ED-Remoter.png" mode="heightFix"/>
+    </view>
+  </block>
+</view>
